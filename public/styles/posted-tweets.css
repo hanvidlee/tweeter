@@ -37,7 +37,7 @@
 }
 
 .posted-message {
-  border-bottom: solid;
+  /* border-bottom: solid; */
   width: 90%;
   margin: 5%;
   margin-top: 0;
@@ -50,9 +50,12 @@
 }
 
 .posted-tweets footer {
+  border-top: solid;
   display: flex;
   justify-content: space-between;
-  padding: 5px 2.5em;
+  padding: 5px 0.5em;
+  margin: 39px 39px 0px 39px;
+  
 }
 
 .icons {
