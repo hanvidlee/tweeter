@@ -5,35 +5,16 @@
  */
 
 $(document).ready(function() {
-  // const data = [
-  //   {
-  //     "user": {
-  //       "name": "Newton",
-  //       "avatars": "https://i.imgur.com/73hZDYK.png"
-  //       ,
-  //       "handle": "@SirIsaac"
-  //     },
-  //     "content": {
-  //       "text": "If I have seen further it is by standing on the shoulders of giants"
-  //     },
-  //     "created_at": 1461116232227
-  //   },
-  //   {
-  //     "user": {
-  //       "name": "Descartes",
-  //       "avatars": "https://i.imgur.com/nlhLi3I.png",
-  //       "handle": "@rd"
-  //     },
-  //     "content": {
-  //       "text": "Je pense , donc je suis"
-  //     },
-  //     "created_at": 1461113959088
-  //   }
-  // ];
+  const safe = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
 
   const createTweetElement = function(tweet) {
     const { user, content, created_at } = tweet;
+    const time = timeago.format(created_at,"en_US")
     let $tweet = $('<article>');
     // ...
     let $tweetContent = `<article class="posted-tweets">
@@ -44,9 +25,9 @@ $(document).ready(function() {
       </div>
       <p class="handle">${user.handle}</p>
     </header>
-    <p class="posted-message">${content.text}}</p>
+    <p class="posted-message">${safe(content.text)}</p>
     <footer>
-      <span class="date-posted">posted ${created_at} days ago</span>
+      <span class="date-posted">${time}</span>
       <div class="icons">
         <i class="fa-solid fa-flag" id="flag"></i>
         <i class="fa-solid fa-heart"id="heart"></i>
@@ -80,7 +61,7 @@ $(document).ready(function() {
     }).done(renderTweets);
   };
 
-    $('.create-tweet').on('submit', function(event) {
+    $('.create-tweet').off('submit').on('submit', function(event) {
       event.preventDefault();
       const input = $('#tweet-text').val();
       if(input.trim() === ""){
@@ -93,9 +74,11 @@ $(document).ready(function() {
           url: "/tweets",
           method: "POST",
           data: $("form").serialize()
-        }).done(console.log(input));
+        }).then(function() {
+          $('#tweet-text').val("")
+          $('.counter').val(140)
+          loadTweets()
+        });
       }
       });
 });
-
-// const $tweet = createTweetElement(tweetData);
