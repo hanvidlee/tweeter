@@ -1,6 +1,7 @@
 .new-tweet {
   padding: 0 2em;
-  margin: auto
+  margin: auto;
+  padding-top: 2em;
 }
 
 button {
