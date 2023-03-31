@@ -9,11 +9,11 @@
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.posted-header{
+.posted-header {
   display: flex;
   justify-content: space-between;
   padding: 0 2em;
-  
+
 }
 
 .handle {
@@ -23,7 +23,8 @@
   flex-wrap: wrap;
   word-break: break-all;
 }
-.user{
+
+.user {
   padding-left: 1em;
   font-size: 33px;
 }
@@ -33,7 +34,7 @@
   height: 100px;
 }
 
-.posted-tweets div{
+.posted-tweets div {
   display: flex;
   flex-direction: row;
   align-items: normal;
@@ -59,7 +60,7 @@
   justify-content: space-between;
   padding: 5px 0.5em;
   margin: 39px 39px 0px 39px;
-  
+
 }
 
 .icons {

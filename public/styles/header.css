@@ -9,22 +9,22 @@
 }
 
 
-@media only screen and (min-width: 768px){
-.page-header {
-  width: 30%;
-  padding-top: 138px;
-  float: left;
-  position: relative;
-  top: 10em;
-  left: 5em;
-  height: 520px;
-}
+@media only screen and (min-width: 768px) {
+  .page-header {
+    width: 30%;
+    padding-top: 138px;
+    float: left;
+    position: relative;
+    top: 10em;
+    left: 5em;
+    height: 520px;
+  }
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .page-header {
     width: 100%;
     padding-top: 120px;
   }
-  }
+}

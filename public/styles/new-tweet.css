@@ -52,13 +52,13 @@ section {
   font-size: 17px;
 }
 
-.new-tweet form{
+.new-tweet form {
   margin-bottom: 2em;
 }
 
 #error-message {
   display: none;
-  background-color:transparent;
+  background-color: transparent;
   color: tomato;
   font-size: 1.25em;
   padding: 10px;
@@ -67,4 +67,3 @@ section {
   border-radius: 5px;
   word-break: break-all;
 }
-

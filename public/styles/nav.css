@@ -26,14 +26,15 @@ i.fa-angles-down {
   color: red;
 }
 
-@media only screen and (max-width: 768px){
-  .navbar{
+@media only screen and (max-width: 768px) {
+  .navbar {
     background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+    background-color: #fafafa;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .navbar{
+  .navbar {
     position: fixed;
     background-color: #4056A1;
   }
