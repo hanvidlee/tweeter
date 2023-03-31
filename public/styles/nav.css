@@ -1,9 +1,7 @@
 .navbar {
   display: flex;
-  position: fixed;
   height: 120px;
   width: 100%;
-  background-color: #4056A1;
   color: #FFFFFF;
   padding: 0 1.5em;
   align-items: center;
@@ -30,6 +28,13 @@ i.fa-angles-down {
 
 @media only screen and (max-width: 768px){
   .navbar{
-    background-color: transparent;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar{
+    position: fixed;
+    background-color: #4056A1;
   }
 }

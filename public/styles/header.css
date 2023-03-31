@@ -1,42 +1,30 @@
 .page-header {
   display: flex;
-  height: 520px;
-  width: 100%;
-  padding-top: 120px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #fafafa;
   background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  z-index: -1;
 }
 
 
 @media only screen and (min-width: 768px){
 .page-header {
-  display: flex;
-  height: 520px;
-  width: 50%;
-  padding-top: 120px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #fafafa;
-  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  width: 30%;
+  padding-top: 138px;
   float: left;
+  position: relative;
+  top: 10em;
+  left: 5em;
+  height: 520px;
 }
 }
 
 
 @media only screen and (max-width: 768px){
   .page-header {
-    display: flex;
-    height: 520px;
     width: 100%;
     padding-top: 120px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fafafa;
-    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
   }
   }
