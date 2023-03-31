@@ -8,7 +8,7 @@ This repository is the starter code for the project: Students will fork and clon
 !["Screenshot of mainpage-desktop"](https://github.com/hanvidlee/tweeter/blob/master/public/docs/Mainpage-Desktop.png)
 
 ### Screenshot of mainpage on mobile/tablet
-!["Screenshot of mainpage-mobile/tablet"](https://github.com/hanvidlee/tweeter/blob/master/public/docs/Mainpage-Desktop.png)
+!["Screenshot of mainpage-mobile/tablet"](https://github.com/hanvidlee/tweeter/blob/master/public/docs/Mainpage-Mobile.png)
 
 ## Getting Started
 
