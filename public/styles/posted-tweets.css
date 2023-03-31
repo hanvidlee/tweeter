@@ -17,8 +17,11 @@
 }
 
 .handle {
+  display: flex;
   font-size: 33px;
   color: lightgrey;
+  flex-wrap: wrap;
+  word-break: break-all;
 }
 .user{
   padding-left: 1em;
@@ -42,7 +45,8 @@
   margin: 5%;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 1em
+  padding-top: 1em;
+  word-break: break-all;
 }
 
 .date-posted {

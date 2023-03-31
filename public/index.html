@@ -3,6 +3,7 @@
 
 <head>
   <!-- Meta Information -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tweeter - Home Page</title>
 
   <!-- External CSS -->
@@ -55,6 +56,7 @@
   <main class="container">
     <section class="new-tweet">
       <!-- <h2>Compose Tweet</h2> -->
+      <div id="error-message"></div>
       <form method="POST" action="/tweets" class="create-tweet">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
@@ -66,24 +68,6 @@
 
     </section>
     <div class="posted-section">
-    <article class="posted-tweets">
-      <header class="posted-header">
-        <div>
-          <img class="posted-avatar" src="/images/profile-hex.png">
-          <p class="user">User</p>
-        </div>
-        <p class="handle">Handle</p>
-      </header>
-      <p class="posted-message">text text text text text text text text text text text text</p>
-      <footer>
-        <span class="date-posted">Date Posted</span>
-        <div class="icons">
-          <i class="fa-solid fa-flag" id="flag"></i>
-          <i class="fa-solid fa-heart"id="heart"></i>
-          <i class="fa-solid fa-retweet" id="retweet"></i>
-        </div>
-      </footer>
-    </article>
   </div>
   </main>
 </body>
