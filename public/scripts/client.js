@@ -81,6 +81,7 @@ $(document).ready(function() {
         $('#tweet-text').val("");
         $('.counter').val(140);
         $('.posted-section').empty();
+        $("#error-message").slideUp();
         loadTweets();
       });
     }
